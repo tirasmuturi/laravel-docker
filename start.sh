@@ -60,4 +60,4 @@ ln -s /etc/nginx/sites-available/default.conf /etc/nginx/sites-enabled/default.c
 find /etc/php7/conf.d/ -name "*.ini" -exec sed -i -re 's/^(\s*)#(.*)/\1;\2/g' {} \;
 
 # START SUPERVISOR.
-exec /usr/bin/supervisord -n -c /etc/supervisord.confsss
+exec /usr/bin/supervisord -n -c /etc/supervisord.conf
